@@ -1,15 +1,21 @@
+import React from 'react'
+
 function TypeCard({ icon: Icon, title, subtitle, onClick }) {
   return (
+    <>
+    
+    
+
     <button
       onClick={onClick}
       className="text-left bg-white border rounded-xl p-6
-                 hover:border-teal-600 hover:shadow-sm
+                 hover:border-teal-600 hover:shadow-xl
                  transition focus:outline-none focus:ring-2 focus:ring-teal-600"
     >
       {/* Icon */}
       <div className="w-10 h-10 flex items-center justify-center
-                      rounded-lg bg-gray-50 mb-4">
-        <Icon className="text-gray-700" size={20} />
+                      rounded-lg bg-[#0f4450] mb-4">
+        <Icon className="text-white" size={20} />
       </div>
 
       {/* Title */}
@@ -22,5 +28,10 @@ function TypeCard({ icon: Icon, title, subtitle, onClick }) {
         {subtitle}
       </p>
     </button>
-  );
+
+    
+    </>
+  )
 }
+
+export default TypeCard
