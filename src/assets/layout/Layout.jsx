@@ -6,6 +6,8 @@ import LandingPage from "../pages/LandingPage";
 import Auth from "../pages/Auth";
 import AboutUs from "../pages/AboutUs";
 import NewApplicationWizard from "../pages/NewApplicationWizard";
+import NewsNotice from "../pages/NewsNotice";
+import FAQ from "../pages/FAQ";
 
 function Layout() {
   return (
@@ -17,6 +19,8 @@ function Layout() {
           <Route path="/landing" element={<LandingPage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/newapp" element={<NewApplicationWizard />} />
+          <Route path="/news" element={<NewsNotice />} />
+          <Route path="/faq" element={<FAQ />} />
         </Routes>
 
       <NewFoot />

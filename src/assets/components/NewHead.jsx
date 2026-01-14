@@ -124,15 +124,15 @@ function NewHead() {
       <li><Link to="/landing" onClick={() => setIsOpen(false)}>Home</Link></li>
       <li><Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link></li>
       <li><a href="#" onClick={() => setIsOpen(false)}>Services</a></li>
-      <li><a href="#" onClick={() => setIsOpen(false)}>News / Notices</a></li>
-      <li><a href="#" onClick={() => setIsOpen(false)}>Gallery</a></li>
-      <li><a href="#" onClick={() => setIsOpen(false)}>FAQs</a></li>
+      <li><Link to="/news" onClick={() => setIsOpen(false)}>News / Notices</Link></li>
+      {/* <li><a href="#" onClick={() => setIsOpen(false)}>Gallery</a></li> */}
+      <li><Link to="/faq" onClick={() => setIsOpen(false)}>FAQs</Link></li>
       <li><Link to="/" onClick={() => setIsOpen(false)}>Citizen Corner</Link></li>
-      <li><a href="#" onClick={() => setIsOpen(false)}>Contact Us</a></li>
+      <li><Link to="/" onClick={() => setIsOpen(false)}>Contact Us</Link></li>
     </ul>
 
   </div>
-</nav>
+</nav>  
 
 
 
